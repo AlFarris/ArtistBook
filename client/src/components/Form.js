@@ -34,7 +34,7 @@ const Form = () => {
             e.target.style.background ='green';
         };
         const handleMouseLeave = (e) =>{
-            e.target.style.background ='info';
+            e.target.style.background ='#61dafb';
         };
     
     return (

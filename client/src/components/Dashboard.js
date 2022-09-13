@@ -20,8 +20,8 @@ const Dashboard = () => {
                 <Link  className=""to={`/art`}>Add New</Link>
             </div>
             <form className='d-flex justify-content-end me-3'>
+                <label className="form-label">Search Artist:</label>
                 <input onChange= {e=>setSearch(e.target.value)} type="text" placeholder="name"></input>
-                <input type="submit" value="Search"></input>
             </form>
             <table className="table caption-top table-striped">
                 <thead className='table-light'>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                                 <td>{art.name}</td>
                                 <td>{art.specialty}</td>
 
-                                <td><Link to={`/artdetails/${art._id}`}>details</Link></td>
+                                <td><Link to={`/artdetails/${art._id}`}>Details</Link></td>
                                 <td><Link to={`/editart/${art._id}`}>Edit</Link></td>
                         </tr>
                     })}
